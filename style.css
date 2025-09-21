@@ -1,0 +1,303 @@
+/* yazı fontu */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+
+}
+
+/* root */
+:root {
+   --color-primary: #0d6241;
+  --color-secondary: #d51231;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+/* global styles */
+body{
+    font-family:  "Open Sans", sans-serif;
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 7px 16px;
+  background: none;
+  border: 1px solid var(--color-black);
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-dark {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.btn-light{
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+
+.btn-light:hover {
+   opacity: 0.8;
+}
+.btn-dark:hover {
+  background-color: #333333;
+}
+.bg-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.text-center {
+    text-align: center;
+}
+
+.text-xl {
+    font-size: 50px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.text-md{
+     font-size: 25px;
+    margin-bottom: 20px;
+
+}
+.text-sm {
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+/* .max-height{
+    height: 100%;
+    max-height: 400px;
+} */
+section{
+    padding: 20px 0;
+    margin: 30px 0;
+   
+}
+section h2{
+    margin-bottom: 30px !important;
+    font-weight: 600;
+    max-width: 700px;
+    margin: 0 auto;
+    
+}
+section p{
+     max-width: 500px;
+    margin: 0 auto;
+    
+
+}
+
+section p a{
+    color: var(--color-white);
+    text-decoration: underline;
+}
+section .section-image {
+
+ flex: 1;
+ 
+    /* object-fit:cover;
+    /* bir resmi kapsayıcıya orantılı şekilde doldurur. en-boy oranı bozulmaz */
+
+}
+section .section-image img{
+    width: 100%;
+    height: 100%;
+} 
+section .section-text {
+    flex: 1;
+    /* flex 1 ile her  kutu eşit büyüklükte oldu */
+
+
+}
+section .section-text .btn{
+    display: inline-block;
+    /* bulunduğu satırı bloklayarak inline alan kadar yer kaplasın */
+    margin-top: 20px;
+}
+.jingle-section {
+    text-align: center;
+    /* ilgili eleman merkeze hizalandı */
+    padding: 20px 10px;
+}
+.jingle-section h2{
+    margin-bottom: 30px !important;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.jingle-section p a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+.bg-secondary{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+/* header */
+
+header {
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+header .header-left {
+  gap: 45px;
+}
+header .header-left .logo img {
+  width: 50px;
+  height: 50px;
+}
+header .header-left nav {
+  gap: 30px;
+}
+header .header-left nav a {
+  color: var(--color-black);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+header .header-left nav a:hover {
+  color: var(--color-primary);
+}
+
+header .header-right {
+  gap: 20px;
+}
+header .header-right .store {
+  gap: 10px;
+  cursor: pointer;
+}
+header .header-right .store img {
+  width: 20px;
+  height: 20px;
+}
+
+header .header-right .store span {
+  font-weight: bold;
+}
+
+header .header-right .store:hover > span {
+  color: var(--color-primary);
+}
+/* jingle */
+
+/* list section */
+
+/*cards section */
+.cards-section {
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 200px;
+}
+.cards-section .card {
+  max-height: 500px;
+  margin: 20px 0;
+}
+.cards-section .card img {
+  width: 100%;
+  height: 100%;
+}
+.cards-section .card .card-text {
+  padding: 20px;
+  height: 250px;
+}
+.cards-section .card .card-text p {
+  margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  width: 95%;
+  margin: 50px auto;
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+footer .social a img {
+  width: 35px;
+  height: 35px;
+}
+
+footer .copyright {
+  margin-bottom: 20px;
+}
+footer .created-by {
+  background: linear-gradient(to right, green, black);
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  color: var(--color-white);
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+footer .created-by span {
+  color: red;
+  margin-left: 10px;
+}
+
+/* responsive*/
+@media (max-width: 1000px) {
+  .header-left nav a {
+    display: none;
+  }
+  .text-xl {
+    font-size: 30px;
+  }
+  .text-md {
+    font-size: 15px;
+  }
+  section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .store {
+    display: none;
+  }
+  section {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width:700px) {
+    .store {
+        display: none;
+    }
+    section{
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+}
