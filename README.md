@@ -1,4 +1,7 @@
-[starbucks-project.webm](https://github.com/user-attachments/assets/e7ae23e7-68a5-42f0-aa00-44297cf9090f)# Starbucks Project
+)# Starbucks Project
+[starbucks-project.webm](https://github.com/user-attachments/assets/3da2c3df-868b-4a88-b97f-92cd2975c756)
+
+
 > A responsive, Starbucks-inspired user interface built with HTML and CSS.
 
 ---
@@ -8,7 +11,7 @@
 
 Experience a brief preview of the project:
 
-[Uploading starbucks-project.webm…]()
+
 
 
 ---
@@ -68,3 +71,4 @@ Push to your fork and submit a pull request
 This project is open-source and available under the MIT License.
 
 Note: Ensure that your GIF file is optimized for web use to maintain fast loading times. Tools like ezgif.com can help with compression and optimization.
+
